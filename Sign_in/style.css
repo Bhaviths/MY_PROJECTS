@@ -1,0 +1,107 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:sans-serif,arial;
+}
+
+body{
+    --text-color:white;
+
+    background-color:black;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100dvh;
+}
+
+.field{
+    position:relative;
+}
+
+form{
+    border-radius:1rem;
+    padding:2rem;
+    border:2.5px solid white;
+    box-shadow: 10px 10px 5px lightblue;
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction:column;
+    align-items: center;
+    gap:.25rem;
+    height:80dvh;
+}
+
+h1{
+    color:var(--text-color);
+    text-align:center;
+    font-size:6.5dvh;
+}
+
+label{
+    position: absolute;
+    color:var(--text-color);
+    font-size:2.5dvh;
+    transition:all .5s ease-out;
+    transform:translateY(1.5rem);
+}
+
+input{
+    padding:.25rem;
+    background-color:transparent;
+    border:none;
+    outline:none;
+    color:white;
+    cursor:default;
+    font-size:large;
+    border-bottom:2px solid white;
+    min-width:50dvh;
+}
+
+@media (max-width:600px)
+{
+    input{
+        min-width:25dvh;
+    }
+
+    form #submit{
+        border:.25rem solid white;
+        border-radius:1rem;
+        background-color:green;
+    }
+}
+
+@media (min-height:780px)
+{
+    label{
+        transform: translateY(.75rem);
+    }
+}
+
+#Warning{
+    color:white;
+    font-size:larger;
+}
+
+#submit{
+    padding:1rem;
+    background-color:transparent;
+    color:white;
+    font-size:4dvh;
+    border:.25rem solid transparent;
+    transition: all 1s ease;
+}
+
+#submit:hover,#submit:focus,#reset:hover,#reset:focus{
+    border:.25rem solid white;
+    border-radius:1rem;
+    background-color:green;
+}
+
+#reset{
+    background-color: transparent;
+    border:.25rem solid transparent;
+    padding:.25rem;
+    color:white;
+    font-size:2.5dvh;
+    transition:all 1s ease;
+}

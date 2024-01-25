@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <title>Sign in</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form action="submit.php" method="post" autocomplete="off">
+        <h1 id="logo">
+            <nobr>Sign in</nobr>
+        </h1>
+        <br>
+        <div class="field">
+            <label for="Name" id="one">
+                Name
+            </label>
+            <br>
+            <input type="text" id="Name" name="Name" required autocomplete="off" spellcheck="false">
+        </div>
+        <br>
+        <div class="field">
+            <label for="Email" id="two">
+                Email
+            </label>
+            <br>
+            <input type="email" id="Email" name="Email" required autocomplete="off" spellcheck="false">
+        </div>
+        <br>
+        <div class="field">
+            <label for="Password" id="three">
+                Password
+            </label>
+            <br>
+            <input type="password" id="Password" name="Password" required autocomplete="off" spellcheck="false">
+        </div>
+        <br>
+        <div class="field">
+            <label for="Conpass" id="four">
+                Confirm Password
+            </label>
+            <br>
+            <input type="password" id="Conpass" name="Conpass" required autocomplete="off" spellcheck="false"><br>
+            <p id="Warning"></p><br>
+        </div>
+        <br>
+        <button type="submit" id="submit"><nobr>Submit Form</nobr></button>
+        <br>
+        <button type="reset" id="reset"><nobr>Clear Form</nobr></button>
+    </form>
+</body>
+</html>
